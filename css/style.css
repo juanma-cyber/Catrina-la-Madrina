@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    background: radial-gradient(circle at 120.71% 50%, #2a3940 0, #2b383f 5%, #2c353d 10%, #2c3339 15%, #2c2f35 20%, #2a2c2f 25%, #282828 30%, #242421 35%, #1e1f1a 40%, #171b12 45%, #0d1605 50%, #001100 55%, #000b00 60%, #000500 65%, #000000 70%, #000000 75%, #000000 80%, #000000 85%, #000000 90%, #000000 95%, #000000 100%);
+
+
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+    background: radial-gradient(circle at 120.71% 50%, #ff8a9b 0, #ff7ea9 7.14%, #ff71b6 14.29%, #ff65c4 21.43%, #ff5ad2 28.57%, #ff50df 35.71%, #ff49ec 42.86%, #f346f9 50%, #d048ff 57.14%, #a54fff 64.29%, #6857ff 71.43%, #0060ff 78.57%, #0067ff 85.71%, #006dff 92.86%, #0072ff 100%);
+    color: #1670c4;
+ 
+}
+
+.container p{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-text-p{
+    background: #84b5e4;
+    color: #e71d16;
+}
+
+header{
+    height: 60px;
+    background: #110350;
+    display: flex;
+    padding: 0 20px;
+}
+.menu-toggle{
+    display: none;
+    margin-left: auto;
+    color: rgb(238, 223, 8);
+    line-height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.jumbotron{
+    background: radial-gradient(circle at 50% 50%, #ff5d56 0, #ff6841 3.85%, #ff742a 7.69%, #ff8008 11.54%, #ff8a00 15.38%, #ef9400 19.23%, #dd9d00 23.08%, #cba500 26.92%, #b7ac00 30.77%, #a2b200 34.62%, #8ab800 38.46%, #70bc00 42.31%, #50c00b 46.15%, #12c330 50%, #00c649 53.85%, #00c861 57.69%, #00c978 61.54%, #00ca8f 65.38%, #00cba7 69.23%, #00ccbe 73.08%, #00ccd4 76.92%, #00ccea 80.77%, #00cbff 84.62%, #00caff 88.46%, #00c8ff 92.31%, #00c6ff 96.15%, #00c2ff 100%);
+}
+.jumbotron img{
+    max-width: 50px;
+}
+
+.jumbotron p{
+    color: #365e36;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 60pxs;
+    text-transform: uppercase;
+    font-family: "press start 2P", cursive;
+}
+
+.logo img{
+    margin: 1 auto;
+    max-width: 300px;
+    height: auto;
+    width: 30%;
+    margin-bottom: 4px;
+    float: center;
+    display: flex;
+    padding: 20px 0;
+}
+#menu{
+    margin-left: auto;
+
+}
+#menu ul li{
+    display: inline-block;
+
+}
+#menu ul li a{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    transition: cubic-bezier(1, 0, 0, 1);
+
+ }
+
+#menu ul li a:hover{
+    background: #5794da;
+
+}
+
+.show{
+    height: 305px !important;
+}
+
+
+
+@media screen and (max-width:700px){
+    .menu-toggle{
+        display: block;
+    }
+    #menu{
+        background: #58e0be;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border: 1px solid #fff;
+        overflow: hidden;
+        transition: .3s ease-out;
+    }
+    #menu ul li{
+        display: block;
+        text-align: center;
+
+    }
+    #menu ul li a{
+        color: white;
+        width: 100%;
+        font-size: 20px;
+        border-bottom: 1px solid #fff;
+
+
+    }
+    #menu ul li a:hover{
+        background: #92ccbd;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+
+
+
+ul{
+    list-style: none;
+
+}
+.icon-wrap{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: #42c3f7;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 3%;
+
+}
+
+.icon-wrap i{
+    text-align: center;
+    color: #fff;
+    font-size: 45%;
+
+}
+.left-col{
+    float: left;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    padding: 1%;
+
+}
+
+a{
+    color: #c4c72d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #332c2c;
+
+}
+img{
+    
+    margin: 1 auto;
+    max-width: 1000px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 4px;
+    float: center;
+    display: flex;
+    padding: 20px 0;
+}
+.icon-text{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon-text-icon{
+    float: right;
+    width: 20%;
+    padding: 4%;
+
+}
+.icon-text-text{
+    float: left;
+    width: 25px;
+    padding: 4% 4% 2% 0;
+}
+#wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#banner-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+}
+footer{
+    background: radial-gradient(circle at 120.71% 50%, #2a3940 0, #2b383f 5%, #2c353d 10%, #2c3339 15%, #2c2f35 20%, #2a2c2f 25%, #282828 30%, #242421 35%, #1e1f1a 40%, #171b12 45%, #0d1605 50%, #001100 55%, #000b00 60%, #000500 65%, #000000 70%, #000000 75%, #000000 80%, #000000 85%, #000000 90%, #000000 95%, #000000 100%);
+    width: auto;
+    overflow: auto;
+
+}
+.icon-text{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon-text-icon{
+    float: right;
+    width: 20%;
+    padding: 4%;
+
+}
+.icon-text-text{
+    float: left;
+    width: 60%;
+    padding: 4% 4% 2% 0;
+}
+
+.footer-nav{
+    text-align: right;
+
+}
+.footer-nav a{
+    font-size: 160%;
+    color: #c3d7df;
+    font-weight: 300;
+    font-size: 150%;
+    display: inline-block;
+
+}
+
+.footer-nav a:hover{
+
+    color: #f5f5f5;
+
+}
+
+.nav li:hoover > ul{
+    display: block;
+}
+
+.social{
+    text-align: center;
+
+}
+.socila li{
+    display: inline;
+
+}
+.social i{
+    font-size: 420%;
+    margin: 1%;
+    padding: 5%;
+    color: #c3d7df;
+}
+
+.footer-nav{
+    text-align: right;
+
+}
+.footer-nav a{
+    font-size: 160%;
+    color: #c3d7df;
+    font-weight: 300;
+    font-size: 150%;
+    display: inline-block;
+
+}
+
+.footer-nav a:hover{
+
+    color: #f5f5f5;
+
+}
+
+.nav li:hoover > ul{
+    display: block;
+}
+
+.social{
+    text-align: center;
+
+}
+.socila li{
+    display: inline;
+
+}
+.social i{
+    font-size: 420%;
+    margin: 1%;
+    padding: 5%;
+    color: #c3d7df;
+}
+
+.footer-second{
+    background: #2e3e50;
+    width: 100%;
+    overflow: auto;
+}
+
+.btn-btn-primary{
+    color: #524c56;
+}
+
+p{
+    color: #f5eef1;
+}
+
+i{
+    color: #e1ebe1;
+}
+h1{
+    color: #f3f3ef;
+}
+h2{
+    font-size: 175%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #fcfdfd;
+
+}  
+h3{
+        color: #fcfdff;
+}
